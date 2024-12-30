@@ -2,7 +2,7 @@
 
 This project is a **Hall Booking System** that includes a backend developed using **Spring Boot** and a frontend developed using **React.js**. The project also uses **PostgreSQL** as the database to manage hall bookings.
 
-##Table of Contents
+**Table of Contents**
 1.Overview
 2.PostgreSQL Setup
   1.Listing Databases
@@ -15,11 +15,11 @@ This project is a **Hall Booking System** that includes a backend developed usin
 4.Frontend Setup
   1.How to Run the Frontend
 
-##Overview
+**Overview**
 This project allows users to book halls, track their booking status, and manage booking details (e.g., rent, charges). The **backend** serves as a REST API, and the **frontend** provides a user-friendly interface for managing bookings.
 
-##PostgreSQL Setup
-###Listing Databases
+**PostgreSQL Setup**
+*Listing Databases*
 Command: \l
 Explanation:
 
@@ -30,7 +30,7 @@ Explanation:
   *Encoding, Collate, Ctype: Character set and locale settings.
   *Access privileges: Permissions for users.
 
-###Creating Tables
+*Creating Tables*
 Command:
 
 CREATE TABLE hall_booking (
@@ -48,7 +48,6 @@ CREATE TABLE hall_booking (
 );
 
 Explanation:
-
 *This command creates the hall_booking table to store booking information.
 *Key columns include:
   *booking_id: Auto-incrementing primary key.
@@ -57,8 +56,8 @@ Explanation:
   *start_date, end_date: Track booking schedule.
   *status: Default is "Pending".
 
-###Creating Functions for Booking Management
-*Insert Booking
+**Creating Functions for Booking Management**
+*Insert Booking*
 Command:
 
 CREATE OR REPLACE FUNCTION insert_booking(
@@ -80,7 +79,8 @@ END;
 $$ LANGUAGE plpgsql;
 
 Explanation:This function adds a new booking to the hall_booking table.
-*Update Booking
+
+*Update Booking*
 Command:
 
 CREATE OR REPLACE FUNCTION update_booking(
@@ -112,48 +112,30 @@ END;
 $$ LANGUAGE plpgsql;
 Explanation: This function updates an existing booking with new values.
 
-###Final Check
+*Final Check*
 Command:
 \l
 
 Explanation: Re-check the list of databases to ensure no unintended changes were made.
 
-##Backend Setup
-###Project Structure
-The backend is a Spring Boot application. Below is an overview of the directory structure:
+**Backend Setup**
 
-HallBooking_Backend/
-├── pom.xml                # Maven configuration for dependencies
-├── target/                # Compiled files (e.g., .jar or .war)
-└── src/main/java/         
-    ├── com/example/hallbooking/
-        ├── config/        # Database setup and application properties
-        ├── controller/    # REST API controllers
-        ├── entity/        # Data model classes (e.g., HallBooking)
-        ├── repository/    # Database operations using Spring Data JPA
-        ├── service/       # Business logic
-        └── HallBookingApplication.java  # Main class to run the application
-└── src/main/resources/     
-    ├── application.properties  # Application configuration (e.g., database URL)
-└── src/test/java/          # Test cases
-└── src/test/resources/     # Resources for testing
-
-###How to Run the Backend
+*How to Run the Backend*
 *Navigate to the project root (where pom.xml is located).
 *Build the project using Maven:
 
 mvn clean install 
 mvn spring-boot:run
 
-##Frontend Setup
-###How to Run the Frontend
+**Frontend Setup**
+*How to Run the Frontend*
 *Navigate to the frontend directory and install dependencies:
 npm install --force
 
 Start the frontend application:
 npm start
 
-##Conclusion
+***Conclusion***
 This project demonstrates a full-stack application with a PostgreSQL backend, a Spring Boot REST API, and a React.js frontend. Ensure you have both the backend and frontend running together for the complete experience.
 
 Let me know if you need further clarification or have any issues!
