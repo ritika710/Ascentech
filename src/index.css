@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #007bff; /* Blue */
+  --secondary-color: #6c757d; /* Gray */
+  --accent-color: #ffc107; /* Yellow */
+  --background-color: rgba(255, 255, 255, 0.8);
+  --background-image: url('/Users/ritikadobhal/Downloads/Untitled design.png'); 
+  --table-border-color: #ddd;
+  --text-color: #333;
+  --button-background-color: var(--primary-color);
+  --button-text-color: #fff;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif; 
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100vh;
+  color: var(--text-color);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form input, form select {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: var(--text-color);
+}
+
+form button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+}
+
+.submit-button:hover {
+  background-color: #fff; 
+  color: var(--button-background-color); 
+}
+
+.back-button {
+  background-color: var(--secondary-color); 
+  color: #fff;
+}
+
+.back-button:hover {
+  background-color: #fff; 
+  color: var(--secondary-color);
+}
+
+table {
+  margin: 20px auto;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--table-border-color);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+th, td {
+  display: table-cell;
+  border: 1px solid var(--table-border-color);
+  padding: 12px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  h1, h2 {
+    font-size: 1.8rem;
+  }
+
+  form {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  form {
+    padding: 15px;
+  }
+}

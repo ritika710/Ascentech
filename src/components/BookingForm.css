@@ -1,0 +1,95 @@
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%; /* Occupy 90% of the parent container */
+  max-width: 600px; /* Maximum width for larger screens */
+  margin: 20px auto; /* Center the form with some top/bottom margin */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+.booking-form button {
+  padding: 8px 12px; /* Reduced padding */
+  font-size: 14px;   /* Smaller font size */
+  background-color: navy;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 30px;
+  margin: 5px; /* Add some margin around buttons */
+}
+
+/* ... other styles */
+.required-star {
+  color: red;
+  margin-right: 2px; /* Adjust spacing as needed */
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center; /* Vertically align items */
+}
+
+.form-group label {
+  width: 200px; /* Consistent label width */
+  margin-right: 10px;
+  text-align: left;
+  flex-shrink: 0; /* Prevent label from shrinking */
+}
+.booking-form .button-group {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  flex-grow: 1; /* Allow input to grow */
+  padding: 8px;
+  border: 2px solid #de1a1a;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+    height: 100px; /* Set a reasonable height for textareas */
+}
+
+.total-display {
+  padding: 8px;
+  font-weight: bold;
+}
+
+.booking-form button {
+  padding: 6px 10px;
+  margin-top: 10px;
+  background-color: navy; /* Blue */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.booking-form button:last-of-type {
+    background-color: navy; /* Red for the back button */
+    margin-right: 0;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .booking-form {
+    width: 80%; /* Wider form on larger screens */
+  }
+}
