@@ -8,19 +8,19 @@ This project allows users to book halls, track their booking status, and manage 
 
 ***Backend Setup***
 
-*Navigate to the project root (where pom.xml is located).
-*Build the project using Maven:
+Navigate to the project root (where pom.xml is located).
+Build the project using Maven:
 
 **mvn clean install**
 **mvn spring-boot:run**
 
 ***Frontend Setup***
 
-*Navigate to the frontend directory and install dependencies:
+Navigate to the frontend directory and install dependencies:
 
 **npm install --force**
 
-*Start the frontend application:
+Start the frontend application:
 
 **npm start**
 
