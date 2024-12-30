@@ -12,6 +12,7 @@ Navigate to the project root (where pom.xml is located).
 Build the project using Maven:
 
 **mvn clean install**
+
 **mvn spring-boot:run**
 
 ***Frontend Setup***
