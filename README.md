@@ -7,7 +7,7 @@ This project is a **Hall Booking System** that includes a backend developed usin
 This project allows users to book halls, track their booking status, and manage booking details (e.g., rent, charges). The **backend** serves as a REST API, and the **frontend** provides a user-friendly interface for managing bookings.
 
 
-***Backend Setup***
+-***Backend Setup***
 
 Navigate to the project root (where pom.xml is located).
 Build the project using Maven:
@@ -17,7 +17,7 @@ Build the project using Maven:
 **mvn spring-boot:run**
 
 
-***Frontend Setup***
+-***Frontend Setup***
 
 Navigate to the frontend directory and install dependencies:
 
