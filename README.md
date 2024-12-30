@@ -28,4 +28,3 @@ Start the frontend application:
 **npm start**
 
 
-Let me know if you need further clarification or have any issues!
